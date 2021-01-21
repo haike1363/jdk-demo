@@ -1,6 +1,7 @@
-package pers.haike.demo;
+package pers.haike.demo.data_structure;
 
 import org.junit.Test;
+import pers.haike.demo.Lazy;
 
 import static org.junit.Assert.assertTrue;
 
