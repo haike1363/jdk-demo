@@ -66,7 +66,33 @@
         <version>2.1.1.RELEASE</version>
     </dependency>
 
+        <!-- json -->
+    <dependency>
+      <groupId>json</groupId>
+      <artifactId>json</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <!-- json -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20160810</version>
+    </dependency>
+
   </dependencies>
+
+    <repositories>
+    <repository>
+      <id>nexus-aliyun</id>
+      <name>Nexus aliyun</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>artifactory</id>
+      <url>http://mvn.hz.netease.com/artifactory/repo</url>
+    </repository>
+  </repositories>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
