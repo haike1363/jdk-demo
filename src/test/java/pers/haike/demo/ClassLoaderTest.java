@@ -24,7 +24,7 @@ public class ClassLoaderTest {
                 java.lang.Class myClass = Thread.currentThread().getContextClassLoader()
                     .loadClass("pers.haike.demo.classloader.MyLib");
                 Object myObject = myClass.newInstance();
-                Method myMethod = myClass.getDeclaredMethod("say", String.class);
+                Method myMethod = myClass.getDeclaredMethod("say", StringTest.class);
                 myMethod.invoke(myObject, "Thread World");
             } catch (Exception e) {
                 e.printStackTrace();
@@ -33,7 +33,7 @@ public class ClassLoaderTest {
         final MyClassLoader myClassLoader = new MyClassLoader("./MyLib.class");
         java.lang.Class myClass = myClassLoader.loadClass("pers.haike.demo.classloader.MyLib");
         Object myObject = myClass.newInstance();
-        Method myMethod = myClass.getDeclaredMethod("say", String.class);
+        Method myMethod = myClass.getDeclaredMethod("say", StringTest.class);
         myMethod.invoke(myObject, "Main World");
 
         //Thread.currentThread().setContextClassLoader(myClassLoader);

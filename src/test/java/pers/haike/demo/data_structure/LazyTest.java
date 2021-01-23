@@ -3,9 +3,6 @@ package pers.haike.demo.data_structure;
 import org.junit.Test;
 import pers.haike.demo.Lazy;
 
-import static org.junit.Assert.assertTrue;
-
-
 public class LazyTest {
 
     static class A {
@@ -32,12 +29,5 @@ public class LazyTest {
         a = b.getA();
     }
 
-    @Test
-    public void testSpringLazy() {
-        org.springframework.data.util.Lazy<A> aLazy = new org.springframework.data.util.Lazy<>(
-                () -> new A());
-        System.out.println("inited aLazy");
-        A a = aLazy.get();
-        a = aLazy.get();
-    }
+
 }
